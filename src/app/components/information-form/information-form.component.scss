@@ -2,76 +2,77 @@
 @import "../../../assets/scss/mixins";
 
 .custom {
-  margin-left: 36px;
-  margin-right: 36px;
-  margin-bottom: 41px;
-
-  &__header {
-    @include font-deco(600, 22px);
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 42px;
-    margin-top: 32px;
-    padding-top: 30px;
-    text-align: left;
-    letter-spacing: 0px;
-    color: $color-gray-5;
-    opacity: 100%;
-  }
-}
-
-.btn {
-  @include font-deco(500, 16px);
-  width: 69px;
-  height: 43px;
-  border: 1px solid $color-blue-2;
-  border-radius: 4px;
-  opacity: 1;
-
-  &--clear {
-    color: $color-blue-2;
-    background: $color-white 0% 0% no-repeat padding-box;
-    margin-right: 10px;
-  }
-  &--save {
-    color: $color-white;
-    background: $color-blue-1 0% 0% no-repeat padding-box;
-  }
-}
-
-.border-box {
-  width: 100%;
-  height: auto;
-  padding-top: 32px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-
-  border: 1px solid $color-gray-3;
-  border-radius: 12px;
-  opacity: 1;
-  &__text {
-    @include font-deco(600, 18px);
-    position: absolute;
-    top: -12px; /* Adjust the positioning of the text */
-    left: 10px; /* Adjust the positioning of the text */
-    background-color: $color-white;
-    color: $color-gray-5;
-    padding: 0 5px;
-    opacity: 100%;
-  }
-
-  &__form-label {
-    @include font-deco(600, 14px);
-    color: $color-gray-5;
-    font-weight: 600;
-    margin-bottom: 8px;
-    &__required {
-      color: $color-danger;
-      margin-left: 4px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 41px;
+  
+    &__header {
+      @include font-deco(600,22px);
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 42px;
+      margin-top: 32px;
+      padding-top: 30px;
+      text-align: left;
+      letter-spacing: 0px;
+      color: $color-gray-5;
+      opacity: 100%;
     }
   }
-
-  &__form-control {
-    border: 1px solid $color-gray-2;
+  
+  .btn {
+    @include font-deco(500,16px);
+    width: 69px;
+    height: 43px;
+    border: 1px solid $color-blue-2;
+    border-radius: 4px;
+    opacity: 1;
+  
+    &--clear {
+      color: $color-blue-2;
+      background: $color-white 0% 0% no-repeat padding-box;
+      margin-right: 10px;
+    }
+    &--save {
+      color: $color-white;
+      background: $color-blue-1 0% 0% no-repeat padding-box;
+    }
   }
-}
+  
+  .border-box {
+    width: 100%;
+    height: auto;
+    padding-top: 32px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  
+    border: 1px solid $color-gray-3;
+    border-radius: 12px;
+    opacity: 1;
+    &__text {
+      @include font-deco(600,18px);
+      position: absolute;
+      top: -12px; /* Adjust the positioning of the text */
+      left: 10px; /* Adjust the positioning of the text */
+      background-color: $color-white;
+      color: $color-gray-5;
+      padding: 0 5px;
+      opacity: 100%;
+    }
+  
+    &__form-label {
+      @include font-deco(600,14px);
+      color: $color-gray-5;
+      font-weight: 600;
+      margin-bottom: 8px;
+      &__required {
+        color: $color-danger;
+        margin-left: 4px;
+      }
+    }
+  
+    &__form-control {
+      border: 1px solid $color-gray-2;
+    }
+  }
+  
