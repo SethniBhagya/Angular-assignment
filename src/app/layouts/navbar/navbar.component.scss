@@ -1,0 +1,60 @@
+// styles for navbar component
+.nav {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 69px;
+  position: fixed;
+  z-index: 1000;
+
+  background: #ffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 4px #00000029;
+  opacity: 1;
+  &__brand {
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    &__img {
+      width: 145px;
+      height: 40px;
+    }
+  }
+  &__form {
+    display: flex;
+    height: 35px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    // box-shadow: 0px 3px 4px #00000029;
+    // border: 1px solid #CED4DA;
+    border-radius: 4px;
+    opacity: 1;
+    &__control {
+      width: 338px;
+      padding-right: 30px;
+      align-items: center;
+      border: 1px solid #ced4da;
+    }
+    &__icon {
+      border: none;
+      background: #ffffff;
+      position: absolute;
+      color: #8594aa;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      pointer-events: none; /* Ensure the icon does not interfere with input interactions */
+    }
+  }
+  &__icon {
+    font-size: 20px;
+    color: #354d72;
+  }
+  &__profile {
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    opacity: 1;
+  }
+}
+
+.input-container {
+  position: relative;
+}
