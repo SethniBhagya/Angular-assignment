@@ -1,27 +1,30 @@
+@import "../../../assets/scss/variables";
+
 .main {
   height: 90vh;
   &__font {
-    font-family: "Roboto", sans-serif;
+   font-family: 'Roboto', sans-serif;
     font-size: 26px;
     font-weight: 600;
     &--dark {
-      color: #3b444f;
+      color: $color-gray-5;
     }
     &--danger {
-      color: #d52e45;
+      color: $color-danger;
     }
   }
 
   &__btn {
     width: 113px;
     height: 43px;
-    color: #ffffff;
+    color: $color-white;
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif; 
     font-weight: 500;
-    background: #2ed573 0% 0% no-repeat padding-box;
+    background: $color-success 0% 0% no-repeat padding-box;
     border-radius: 4px;
     opacity: 1;
     border: none;
+    
   }
 }

@@ -1,4 +1,6 @@
 // styles for navbar component
+@import "../../../assets/scss/variables";
+
 .nav {
   top: 0px;
   left: 0px;
@@ -7,8 +9,8 @@
   position: fixed;
   z-index: 1000;
 
-  background: #ffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 4px #00000029;
+  background: $color-white 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 4px $color-black-light;
   opacity: 1;
   &__brand {
     background: transparent 0% 0% no-repeat padding-box;
@@ -21,22 +23,20 @@
   &__form {
     display: flex;
     height: 35px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    // box-shadow: 0px 3px 4px #00000029;
-    // border: 1px solid #CED4DA;
+    background: $color-white 0% 0% no-repeat padding-box;
     border-radius: 4px;
     opacity: 1;
     &__control {
       width: 338px;
       padding-right: 30px;
       align-items: center;
-      border: 1px solid #ced4da;
+      border: 1px solid $color-gray-2;
     }
     &__icon {
       border: none;
-      background: #ffffff;
+      background: $color-white;
       position: absolute;
-      color: #8594aa;
+      color: $color-gray-1;
       top: 50%;
       right: 10px;
       transform: translateY(-50%);
@@ -45,7 +45,7 @@
   }
   &__icon {
     font-size: 20px;
-    color: #354d72;
+    color: $color-blue-1;
   }
   &__profile {
     width: 38px;
